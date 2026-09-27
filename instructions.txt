@@ -1,0 +1,29 @@
+Instructions for Testing
+To execute the unit test suite and verify system calculations:
+
+Bash
+python -m unittest discover -s tests
+
+---
+
+**3. File: `src/models.py`**
+
+```python
+from dataclasses import dataclass, field
+import datetime
+
+
+@dataclass
+class LaundryItem:
+    name: str
+    quantity: int
+    unit_price: float
+    added_at: str = field(
+        default_factory=lambda: datetime.datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
+    )
+
+    @property
+    def total_cost(self) -> float:
+        return self.quantity * self.unit_price
