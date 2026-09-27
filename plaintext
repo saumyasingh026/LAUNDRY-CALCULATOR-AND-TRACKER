@@ -1,0 +1,25 @@
+laundry-tracker-calculator/
+│
+├── data/
+│   └── rates.json              # Rate persistence storage
+│
+├── docs/
+│   ├── architecture_diagram.png # Placeholders for project report diagrams
+│   └── screenshot.png
+│
+├── src/
+│   ├── __init__.py
+│   ├── models.py               # Item & Order data classes
+│   ├── rate_manager.py         # Rate Card management module
+│   ├── tracker.py              # Core logic & calculation module
+│   └── utils.py                # Formatting & terminal helpers
+│
+├── tests/
+│   ├── __init__.py
+│   └── test_tracker.py         # Automated unit test suite
+│
+├── .gitignore
+├── main.py                     # Project entry point
+├── README.md                   # Repository README (VITyarthi compliant)
+├── requirements.txt            # Project dependencies
+└── statement.md                # Project statement (VITyarthi compliant)
